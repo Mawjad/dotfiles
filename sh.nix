@@ -4,7 +4,7 @@ let
   myAliases = {
     ll = "ls -l";
     ".." = "cd ..";
-    dev = "cd ~/Documents/Github";
+    dev = "cd ~/Documents/GitHub";
     rdev = "cd ~/.dotfiles/";
     rplasma = "plasmashell --replace & disown";  
   };

@@ -1,7 +1,10 @@
 # Nix Configuration To-Do
 
-- [ ] *Custom Options*
-- [ ] *Special Args*
+- [x] *Custom Options*
+- [x] *Special Args*
+- [x] *Move sh Stuff to Home.nix*
+- [x] *Fix protonup compat params in home-manager*
+- [x] [implement Nix format for languages & config in helix.nix; get rid of cloned toml files]
 
 # Flake:
 	nix flake update
