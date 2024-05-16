@@ -75,40 +75,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-    environment.systemPackages =
-    (with pkgs; [
-      git
-      xclip
-      gparted
-      parted
-      #go
-      #gopls
-      odin
-      ols
-      zig
-      zls
-      nil
-      mitschemeX11
-      rustup
-      racket
-      neovim
-      neofetch
-      lldb
-      dig
-      auto-cpufreq
-      emscripten
-      scons
-      protonup
-    ])
 
-    ++
-
-    (with pkgs-unstable; [
-      raylib
-      go
-      gopls
-    ]);
-    
   services.flatpak.enable = true;
   services.mullvad-vpn.enable = true;
   services.mullvad-vpn.package = pkgs.mullvad-vpn;
