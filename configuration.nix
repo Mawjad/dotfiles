@@ -81,8 +81,8 @@
       xclip
       gparted
       parted
-      go
-      gopls
+      #go
+      #gopls
       odin
       ols
       zig
@@ -105,6 +105,8 @@
 
     (with pkgs-unstable; [
       raylib
+      go
+      gopls
     ]);
     
   services.flatpak.enable = true;
