@@ -48,6 +48,12 @@
     libresprite
     vscodium
     flameshot
+    libglvnd
+    xorg.libXi
+    xorg.libX11
+    xorg.libXrandr
+    xorg.libXcursor
+    xorg.libXinerama
     libsForQt5.bismuth
     libsForQt5.plasma-disks
     libsForQt5.plasma-workspace
