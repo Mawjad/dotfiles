@@ -1,20 +1,21 @@
-# Nix Configuration To-Do
-
+# Nix Configuration
+## Agenda
 - [x] *Custom Options*
 - [x] *Special Args*
-- [x] *Move sh Stuff to Home.nix*
 - [x] *Fix protonup compat params in home-manager*
 - [x] [implement Nix format for languages & config in helix.nix; get rid of cloned toml files]
+- [ ] *godot.nix*
+- [ ] *flatpak.nix*
 
-# Flake:
+### Flake:
 	nix flake update
 >
 
-# System:
+### System:
 	sudo nixos-rebuild switch --flake .
 >
 
-# Home-manager:
+### Home-manager:
 	home-manager switch --flake .
 >
 

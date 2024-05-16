@@ -21,6 +21,4 @@ in
     shellAliases = myAliases;
   };
 
-  programs.helix.defaultEditor = true;
-
 }
