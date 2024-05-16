@@ -93,6 +93,7 @@
       racket
       neovim
       neofetch
+      lldb
       dig
       auto-cpufreq
       emscripten
