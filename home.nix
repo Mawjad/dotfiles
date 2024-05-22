@@ -20,19 +20,18 @@
     xclip
     gparted
     parted
-    #go
-    #gopls
+    clang
+    go
+    gopls
     odin
     ols
     zig
     zls
     nil
     mitschemeX11
-    rustup
     racket
     neovim
     neofetch
-    lldb
     dig
     auto-cpufreq
     emscripten
@@ -48,32 +47,20 @@
     libresprite
     vscodium
     flameshot
-    libglvnd
-    xorg.libXi
-    xorg.libX11
-    xorg.libXrandr
-    xorg.libXcursor
-    xorg.libXinerama
     libsForQt5.bismuth
     libsForQt5.plasma-disks
     libsForQt5.plasma-workspace
     gnome.gnome-software
+    noisetorch
   ])
 
   ++
 
   (with pkgs-unstable;[
     raylib
-    go
-    gopls
+    rustc
+    cargo
   ]);
-
-  home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-  };
 
   home.sessionVariables = {
     EDITOR = lib.mkForce userSettings.editor;

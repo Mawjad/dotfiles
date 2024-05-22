@@ -1,0 +1,56 @@
+
+theme = "bogster"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+line-number = "relative"
+rulers = [120]
+true-color = true
+scroll-lines = 12
+mouse = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.lsp]
+enable = true
+auto-signature-help = false
+display-messages = true
+display-inlay-hints = true
+snippets = true
+goto-reference-include-declaration = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[keys.normal]
+C-q = ":quit!"
+q = ":buffer-close"
+C-e = ":new"
+C-up = "rotate_view"
+C-left = ":buffer-previous"
+C-right = ":buffer-next"
+C-down = ":hsplit-new"
+C-s = ":write-buffer-close"
+ret = "insert_mode"
+j = "move_char_left" 
+k = "move_line_up"
+l = "move_line_down"
+";" = "move_char_right"
+C-r = ":config-reload"
+
+
+[keys.insert]
+C-s = ":w"
+C-o = ":open ~/.dotfiles/config.toml"
+C-l = ":open ~/.dotfiles/languages.toml"
