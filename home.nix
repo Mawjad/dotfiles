@@ -38,12 +38,11 @@
     scons
     protonup
     firefox
+    chromium
     librewolf
     spotify
     obs-studio
     krita
-    webcord-vencord
-    peek
     libresprite
     vscodium
     flameshot
@@ -52,6 +51,10 @@
     libsForQt5.plasma-workspace
     gnome.gnome-software
     noisetorch
+    butler
+    discord
+    discord-canary
+    netcat-gnu
   ])
 
   ++
@@ -59,7 +62,10 @@
   (with pkgs-unstable;[
     raylib
     rustc
+    rust-analyzer
     cargo
+    clippy
+    webcord-vencord
   ]);
 
   home.sessionVariables = {

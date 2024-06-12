@@ -24,6 +24,14 @@ scope = "source.nix"
 name = "rust"
 auto-format = false
 
+[language-server.godot]
+command = "nc" 
+args = [ "127.0.0.1", "6008"]
+
+[[language-gdscript]]
+name = "gdscript"
+language-servers = [ "godot" ]
+
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
