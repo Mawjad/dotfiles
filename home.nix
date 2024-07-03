@@ -1,4 +1,4 @@
-{ config, lib, pkgs, pkgs-unstable, userSettings, systemSettings, ... }:
+{ config, lib, pkgs, pkgs-new, pkgs-unstable, userSettings, systemSettings, ... }:
 
 {
   home.username = userSettings.username;
@@ -55,19 +55,28 @@
     discord
     discord-canary
     netcat-gnu
+    lm_sensors
+    lmms
   ])
 
   ++
 
-  (with pkgs-unstable;[
+  (with pkgs-new;[
     raylib
     rustc
     rust-analyzer
     cargo
     clippy
+  ])
+
+  ++
+  
+  (with pkgs-unstable;[
     webcord-vencord
+    vesktop
   ]);
 
+  
   home.sessionVariables = {
     EDITOR = lib.mkForce userSettings.editor;
     ### PROTONUP COMPAT PATH ###

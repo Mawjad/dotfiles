@@ -31,8 +31,7 @@
     enable = true;
     allowedTCPPorts = [ 80 443 ];
     allowedUDPPortRanges = [
-      { from = 4000; to = 4007; }
-      { from = 8000; to = 8010; }
+      { from = 1000; to = 2000; }
     ];
   };
 
@@ -83,7 +82,8 @@
 
   programs.steam.enable = true;
   programs.gamemode.enable = true;
-  
+
+  ### INITIAL VERS | DO NOT CHANGE
   system.stateVersion = "23.11";
 
   nix.settings.experimental-features = [ "nix-command" "flakes"];
@@ -91,7 +91,7 @@
     nix.gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 14d";  
+      options = "--delete-older-than 21d";  
     };
   
   };
