@@ -29,7 +29,7 @@
 
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 80 443 ];
+    allowedTCPPorts = [ 80 230 443 ];
     allowedUDPPortRanges = [
       { from = 1000; to = 2000; }
     ];
@@ -50,6 +50,9 @@
   };
 
   services.printing.enable = true;
+
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true;
 
   hardware.opengl = {
     enable = true;
